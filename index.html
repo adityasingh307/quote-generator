@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greetings</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body onload="loadCont()">
+    <div class="main-container">
+      <div class="greeting">
+        Let's start our <span id="daytime"></span> with a new quote
+      </div>
+      <div id="quote-container">
+        <div id="quote">
+          <i class="fa-solid fa-quote-left first-i"></i>
+          <span id="qts"> </span>
+          <i class="fa-solid fa-quote-right second-i"></i>
+        </div>
+        <div id="author">- By <span id="auth"></span></div>
+        <button id="btn" onclick="loadCont()">New Quote</button>
+      </div>
+    </div>
+  </body>
+</html>
